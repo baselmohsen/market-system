@@ -22,14 +22,14 @@ class homeController extends Controller
         $users=User::WhereRoleIs('admin')->count();
         // $orders=Order::count();
 
-        $sales_data = Order::select(
-            DB::raw('YEAR(created_at) as year'),
-            DB::raw('MONTH(created_at) as month'),
-            DB::raw('SUM(total_price) as sum')
-        )->groupBy('month')->get();
+//         $sales_data = Order::select(
+//             DB::raw('YEAR(created_at) as year'),
+//             DB::raw('MONTH(created_at) as month'),
+//             DB::raw('SUM(total_price) as sum')
+//         )->groupBy('month')->get();
 
 
-        return view('dashboard.home',compact('categories','products','clients','users','sales_data'));
+        return view('dashboard.home',compact('categories','products','clients','users'));
     }
 
 
