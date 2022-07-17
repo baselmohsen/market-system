@@ -69,17 +69,7 @@
 
         </div>
 
-        <div class="row">
-          <div class="col-md-12">
-            <div class="tile">
-              <h3 class="tile-title">Monthly Sales</h3>
-              <div class="box-body border-radius-none">
-                <div class="chart" id="line-chart" style="height: 250px;"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+   
 
 
     </div>
